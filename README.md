@@ -1,12 +1,10 @@
-<a href="https://archive.org/details/new-world-order-bible-versions-full-movie" title="Why the King James Bible?"><img src="https://i.imgur.com/A9piMKc.png" width="250" align="right"></a>
+# fob
 
-# kjv [![AUR](https://img.shields.io/badge/AUR-kjv--git-blue.svg)](https://aur.archlinux.org/packages/kjv-git/)
-
-Read the Word of God from your terminal
+Read the French Ostervald Bible from your terminal
 
 ## Usage
 
-    usage: kjv [flags] [reference...]
+    usage: fob [flags] [reference...]
 
     Flags:
       -A num  show num verses of context after matching verses
@@ -43,10 +41,10 @@ Read the Word of God from your terminal
 
 ## Build
 
-kjv can be built by cloning the repository and then running make:
+fob can be built by cloning the repository and then running make:
 
-    git clone https://github.com/bontibon/kjv.git
-    cd kjv
+    git clone https://github.com/smugMochi/fob.git
+    cd fob
     make
 
 ## License
