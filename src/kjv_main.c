@@ -129,7 +129,7 @@ main(int argc, char *argv[])
     if (argc == optind) {
         using_history();
         while (true) {
-            char *input = readline("kjv> ");
+            char *input = readline("fob> ");
             if (input == NULL) {
                 break;
             }
