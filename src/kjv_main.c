@@ -1,5 +1,5 @@
 /*
-kjv: Read the Word of God from your terminal
+fob: Read the French Ostervald Bible from your terminal
 
 License: Public domain
 */
@@ -20,7 +20,7 @@ License: Public domain
 #include "strutil.h"
 
 const char *
-usage = "usage: kjv [flags] [reference...]\n"
+usage = "usage: fob [flags] [reference...]\n"
     "\n"
     "Flags:\n"
     "  -A num  show num verses of context after matching verses\n"
@@ -79,14 +79,14 @@ main(int argc, char *argv[])
         case 'A':
             config.context_after = strtol(optarg, &endptr, 10);
             if (endptr[0] != '\0') {
-                fprintf(stderr, "kjv: invalid flag value for -A\n\n%s", usage);
+                fprintf(stderr, "fob: invalid flag value for -A\n\n%s", usage);
                 return 1;
             }
             break;
         case 'B':
             config.context_before = strtol(optarg, &endptr, 10);
             if (endptr[0] != '\0') {
-                fprintf(stderr, "kjv: invalid flag value for -B\n\n%s", usage);
+                fprintf(stderr, "fob: invalid flag value for -B\n\n%s", usage);
                 return 1;
             }
             break;
@@ -106,7 +106,7 @@ main(int argc, char *argv[])
             printf("%s", usage);
             return 0;
         case '?':
-            fprintf(stderr, "kjv: invalid flag -%c\n\n%s", optopt, usage);
+            fprintf(stderr, "fob: invalid flag -%c\n\n%s", optopt, usage);
             return 1;
         }
     }
